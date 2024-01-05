@@ -13,6 +13,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "destination",
         type=Path,
+        nargs="?",
         help="Path to the destination directory.",
         default=Path.cwd() / "dist",
     )
